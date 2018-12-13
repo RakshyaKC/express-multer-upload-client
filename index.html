@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>Browser Template</h1>
+      <div id="unAuthedView">
+    <form id="sign-up" class="forms">
+     <fieldset>
+       <legend> Sign up here to play tic-tac-toe</legend>
+       <input name="credentials[email]" type="text" placeholder="Email address"><br>
+       <input name="credentials[password]" type="password" placeholder="Password"><br>
+       <input name="credentials[password_confirmation]" type="password" placeholder="Confirm password"><br>
+       <button class="btn btn-info">Sign Up</button>
+     </fieldset>
+   </form>
+
+   <form id="sign-in" class="forms">
+     <fieldset>
+       <legend> Sign in here if you have an account</legend>
+       <input name="credentials[email]" type="text" placeholder="Email address"><br>
+       <input name="credentials[password]" type="password" placeholder="Password"><br>
+       <button class="btn btn-info">Sign In</button>
+     </fieldset>
+   </form>
+
+   <div id="upload">
+     <form id="fileinfo" enctype="multipart/form-data" method="post" name="fileinfo">
+       <input type="text" name="filelabel" size="12" maxlength="32" /><br />
+       <label>File to upload</label>
+       <input type="file" name="file" required />
+       <input type="submit" value="Submit the file!" />
+     </form>
+   </div>
+
+    </body>
+</html>
